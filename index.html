@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style class="style">
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <!-- kanbanborad -->
+        <div class="kanbanborad">
+             <!-- Cards -->
+            <div class="cards" id="todo">
+                <h3 contenteditable="true">Todo</h3>
+                <div class="task" id="draggable" draggable="true" contenteditable="true">
+                    DSA
+                </div>
+                 <!-- Add Button -->
+                <button id="add_item-todo" >Add Item</button>
+
+            </div>
+            <div >
+                <h3> 
+                    Doing
+                </h3>
+
+
+            </div>
+            <div class="cards" id="completed"><h3>Completed</h3>
+            
+            
+            </div>
+
+        </div>    
+        
+         <!-- Hidden Div  -->
+        <div class="addTodoDiv" id="adddiv" >
+            
+            <div class="close">
+                <h3> Add Items</h3>
+                <p id="closebtn">×</p>
+            </div>
+
+            
+            <h4>Name</h4>
+            <input type="text" id="content">
+            <h4>Colors</h4>
+            <div class="colorbtn">
+            <div class="green" id="gcheck"></div>
+            <div class="yellow" id="ycheck"></div>
+            <div class="orange" id="ocheck"></div>
+            <div class="black" id="bcheck"></div>
+            <div class="purple" id="pcheck"></div>
+            </div>
+            <h4>Description</h4>
+            <input type="text">
+            
+            <button type="submit" id="addtask">Add</button>
+           
+        </div>
+
+    </div>
+
+
+      
+
+    <script src="scripts.js"></script>
+</body>
+</html>
